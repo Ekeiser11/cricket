@@ -5,6 +5,8 @@ var cricket;
 var img;
 function preload() {
   img = loadImage("assets/background.jpg");
+
+  chirp=loadSound("assets/cricket.mp3")
 }
 
 function setup() {
@@ -12,7 +14,6 @@ function setup() {
   image(img, 0, 0);
 //soundfile
   soundFormats('mp3', 'ogg');
-  chirp = loadSound('assets/cricket.mp3');
   cricket = new Cricket(width/2, height/2, 64);
 }
 
